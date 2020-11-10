@@ -152,7 +152,7 @@ function deploy() {
 function startwatch() {
     watch(baseDir + '/' + preprocessor + '/**/*', {usePolling: true}, styles)
     watch(baseDir + '/*.html', {usePolling: true}, html)
-    watch(baseDir + '/img/src/**/*.{' + imageswatch + '}', {usePolling: true}, images)
+    watch(baseDir + '/img/**/*.{' + imageswatch + '}', {usePolling: true}, images)
     watch(baseDir + '/**/*.{' + fileswatch + '}', {usePolling: true}).on('change', browserSync.reload)
     watch([baseDir + '/js/**/*.js', '!' + baseDir + '/js/**/*.min.js', '!' + baseDir + '/js/**/*.tmp.js'], {usePolling: true}, series(plugins, userscripts, scripts)).on('change', browserSync.reload)
 }

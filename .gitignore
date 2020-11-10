@@ -4,3 +4,5 @@
 /**/*.DS_Store
 /**/package-lock.json
 build
+.idea
+html-starter-template.iml
