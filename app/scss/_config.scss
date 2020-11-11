@@ -1,0 +1,77 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--dark-color);
+
+  min-width: 350px;
+  position: relative;
+  line-height: 1.6;
+
+  overflow-x: hidden;
+
+  input, textarea {
+    border: var(--gray-color) 1px solid;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: var(--invalid-color);
+    }
+    &:required:valid {
+      border-color: var(--valid-color);
+    }
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.img-width {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+b, strong {
+  font-weight: var(--font-bold);
+}
+
+h1,h2,h3,ul,p{
+  margin: 0;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+
+.section {
+  padding: 3rem 0;
+}

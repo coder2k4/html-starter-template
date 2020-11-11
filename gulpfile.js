@@ -1,6 +1,6 @@
 // VARIABLES & PATHS
 
-let preprocessor = 'sass',
+let preprocessor = 'sсss',
     fileswatch = 'html,htm,txt,json,md,woff2',
     imageswatch = 'jpg,jpeg,png,webp,svg',
     baseDir = 'app',
@@ -51,7 +51,7 @@ let paths = {
 // LOGIC
 
 const {src, dest, parallel, series, watch} = require('gulp')
-const sass = require('gulp-sass')
+const sсss = require('gulp-sass')
 const cleancss = require('gulp-clean-css')
 const concat = require('gulp-concat')
 const browserSync = require('browser-sync').create()
@@ -159,11 +159,11 @@ function startwatch() {
 
 exports.browsersync = browsersync
 exports.scripts = series(plugins, userscripts, scripts)
-exports.assets = series(clean, styles, plugins, userscripts, scripts, images)
+exports.build = series(clean, plugins, userscripts, scripts, images, styles, html, fonts)
 exports.styles = styles
 exports.images = images
 exports.clean = clean
 exports.deploy = deploy
 exports.html = html
 exports.fonts = fonts
-exports.default = series(plugins, userscripts, scripts, images, styles, html,fonts, parallel(browsersync, startwatch))
+exports.default = series(plugins, userscripts, scripts, images, styles, html, fonts, parallel(browsersync, startwatch))
