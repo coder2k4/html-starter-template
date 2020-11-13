@@ -2,41 +2,43 @@
 
 /*===== Font weight =====*/
 :root{
-  --header-height: 3rem;
+
+  --header-height: 30px;
 
   /*===== Colors =====*/
-  --first-color: #E55947;
-  --first-color-alt: #D2321E;
-  --second-color: #E55947;
-  --second-color-alt: #D2321E;
+  --first-color: #3a1b70;
+  --first-color-light: #7b39ef;
+  --second-color: #201e62;
+  --second-color-light: #504cf1;
 
   --white-color: #FAFAFF;
+  --gray-color: #b4b4b5;
   --dark-color: #101010;
   --dark-color-light: #606060;
-  --gray-color: #F0F1F3;
 
   --valid-color: #01bf01;
   --invalid-color: #e00101;
 
 
   /*===== Font and typography =====*/
-  --body-font: 'Open Sans', sans-serif;
-  --biggest-font-size: 3rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.125rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .75rem;
-  --smaller-font-size: .75rem;
+  --body-font: 'roboto', sans-serif;
+  --biggest-font-size: 30px;
+  --h1-font-size: 20px;
+  --h2-font-size: 18px;
+  --h3-font-size: 16px;
+  --normal-font-size: 14px;
+  --small-font-size: 12px;
+  --smaller-font-size: 10px;
 
   /*===== Typography > 768 =====*/
   @media screen and (min-width: 768px){
-      --biggest-font-size: 6rem;
-      --h1-font-size: 2.25rem;
-      --h2-font-size: 1.5rem;
-      --h3-font-size: 1.25rem;
-      --normal-font-size: 1rem;
-      --small-font-size: .813rem;
+      --biggest-font-size: 60px;
+      --h1-font-size: 25px;
+      --h2-font-size: 20px;
+      --h3-font-size: 18px;
+      --normal-font-size: 16px;
+      --small-font-size: 14px;
+      --smaller-font-size: 12px;
   }
 
   /*===== Font weight =====*/
@@ -45,21 +47,21 @@
   --font-bold: 700;
 
   /*===== Margins =====*/
-  --mb-1: .5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
+  --m-1: 10px;
+  --m-2: 20px;
+  --m-3: 30px;
+  --m-4: 40px;
 
   /*===== Paddings =====*/
-  --pb-1: .5rem;
-  --pb-2: 1rem;
-  --pb-3: 1.5rem;
-  --pb-4: 2rem;
+  --p-1: 10px;
+  --p-2: 20px;
+  --p-3: 30px;
+  --p-4: 40px;
 
   /*===== z index =====*/
-  --z-normal: 1;
-  --z-tooltip: 10;
-  --z-fixed: 100;
+  --z-1: 1;
+  --z-10: 10;
+  --z-100: 100;
 }
 
 

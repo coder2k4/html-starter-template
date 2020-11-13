@@ -3,12 +3,12 @@
 @import "libs";
 
 ::placeholder {
-  color: #666;
+  color: var(--first-color);
 }
 
 ::selection {
   background-color: var(--first-color);
-  color: #fff;
+  color: var(--white-color);
 }
 
 html{
@@ -67,8 +67,11 @@ ul{
 }
 
 a{
-  text-decoration: none;
   color: var(--dark-color);
+}
+
+a:hover{
+  text-decoration: none;
 }
 
 .section {
